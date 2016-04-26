@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarMagic", "GuitarMagic\GuitarMagic.csproj", "{872D7322-8F1B-4F5D-B485-2A7E193390C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MidiLib", "..\Libs\MidiLib\MidiLib.csproj", "{83B44F7A-8343-4279-9908-0EA7D8239337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeControl", "..\Libs\ShapeControl\ShapeControl.csproj", "{77A3E20F-622C-45BD-A9E3-1760AD069026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLib", "..\Libs\MathLib\MathLib.csproj", "{1CF1EAF5-ECB4-4924-9396-E20ED0ECD1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpectrumLib", "..\Libs\SpectrumLib\SpectrumLib.csproj", "{CF4E7647-EAF8-44A8-9E1D-52245A05EB2C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GuitarMagicSetup", "GuitarMagicSetup\GuitarMagicSetup.vdproj", "{E7B7E7B4-4202-4F05-BCC4-FA2C6988A4EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{872D7322-8F1B-4F5D-B485-2A7E193390C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872D7322-8F1B-4F5D-B485-2A7E193390C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872D7322-8F1B-4F5D-B485-2A7E193390C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872D7322-8F1B-4F5D-B485-2A7E193390C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B44F7A-8343-4279-9908-0EA7D8239337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B44F7A-8343-4279-9908-0EA7D8239337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B44F7A-8343-4279-9908-0EA7D8239337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B44F7A-8343-4279-9908-0EA7D8239337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A3E20F-622C-45BD-A9E3-1760AD069026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A3E20F-622C-45BD-A9E3-1760AD069026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A3E20F-622C-45BD-A9E3-1760AD069026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A3E20F-622C-45BD-A9E3-1760AD069026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF1EAF5-ECB4-4924-9396-E20ED0ECD1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF1EAF5-ECB4-4924-9396-E20ED0ECD1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF1EAF5-ECB4-4924-9396-E20ED0ECD1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF1EAF5-ECB4-4924-9396-E20ED0ECD1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF4E7647-EAF8-44A8-9E1D-52245A05EB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4E7647-EAF8-44A8-9E1D-52245A05EB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4E7647-EAF8-44A8-9E1D-52245A05EB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4E7647-EAF8-44A8-9E1D-52245A05EB2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B7E7B4-4202-4F05-BCC4-FA2C6988A4EF}.Debug|Any CPU.ActiveCfg = Debug
+		{E7B7E7B4-4202-4F05-BCC4-FA2C6988A4EF}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

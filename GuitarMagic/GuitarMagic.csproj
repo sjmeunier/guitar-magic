@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{872D7322-8F1B-4F5D-B485-2A7E193390C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GuitarMagic</RootNamespace>
+    <AssemblyName>GuitarMagic</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Music.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChordChartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChordChartForm.Designer.cs">
+      <DependentUpon>ChordChartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChordFinderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChordFinderForm.Designer.cs">
+      <DependentUpon>ChordFinderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigForm.Designer.cs">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBAccess.cs" />
+    <Compile Include="FretBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FretBoard.Designer.cs">
+      <DependentUpon>FretBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="FreqencyTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FreqencyTableForm.Designer.cs">
+      <DependentUpon>FreqencyTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntervalFinderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntervalFinderForm.Designer.cs">
+      <DependentUpon>IntervalFinderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetronomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetronomeForm.Designer.cs">
+      <DependentUpon>MetronomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChordChartForm.resx">
+      <DependentUpon>ChordChartForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChordFinderForm.resx">
+      <DependentUpon>ChordFinderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FreqencyTableForm.resx">
+      <DependentUpon>FreqencyTableForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FretBoard.resx">
+      <DependentUpon>FretBoard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntervalFinderForm.resx">
+      <DependentUpon>IntervalFinderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MetronomeForm.resx">
+      <DependentUpon>MetronomeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumericTextBox.resx">
+      <DependentUpon>NumericTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteFinderForm.resx">
+      <DependentUpon>NoteFinderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScaleFinderForm.resx">
+      <DependentUpon>ScaleFinderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpectralAnalyzerForm.resx">
+      <DependentUpon>SpectralAnalyzerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransposerForm.resx">
+      <DependentUpon>TransposerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TunerForm.resx">
+      <DependentUpon>TunerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NoteFinderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteFinderForm.Designer.cs">
+      <DependentUpon>NoteFinderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScaleFinderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScaleFinderForm.Designer.cs">
+      <DependentUpon>ScaleFinderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpectralAnalyzerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpectralAnalyzerForm.Designer.cs">
+      <DependentUpon>SpectralAnalyzerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransposerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransposerForm.Designer.cs">
+      <DependentUpon>TransposerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TunerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TunerForm.Designer.cs">
+      <DependentUpon>TunerForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libs\MathLib\MathLib.csproj">
+      <Project>{1CF1EAF5-ECB4-4924-9396-E20ED0ECD1B1}</Project>
+      <Name>MathLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libs\MidiLib\MidiLib.csproj">
+      <Project>{83B44F7A-8343-4279-9908-0EA7D8239337}</Project>
+      <Name>MidiLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libs\ShapeControl\ShapeControl.csproj">
+      <Project>{77A3E20F-622C-45BD-A9E3-1760AD069026}</Project>
+      <Name>ShapeControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Libs\SpectrumLib\SpectrumLib.csproj">
+      <Project>{CF4E7647-EAF8-44A8-9E1D-52245A05EB2C}</Project>
+      <Name>SpectrumLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Music.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
