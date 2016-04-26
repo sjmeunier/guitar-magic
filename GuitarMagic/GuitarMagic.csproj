@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -13,6 +13,26 @@
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ApplicationIcon>Music.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +42,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -172,7 +193,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Genmidi.dat" />
+    <None Include="GuitarMagic.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -212,27 +238,43 @@
     <Compile Include="TunerForm.Designer.cs">
       <DependentUpon>TunerForm.cs</DependentUpon>
     </Compile>
+    <None Include="settings.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Libs\MathLib\MathLib.csproj">
-      <Project>{1CF1EAF5-ECB4-4924-9396-E20ED0ECD1B1}</Project>
+    <Content Include="chords.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GuitarMagic.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Music.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MathLib\MathLib.csproj">
+      <Project>{1cf1eaf5-ecb4-4924-9396-e20ed0ecd1b1}</Project>
       <Name>MathLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Libs\MidiLib\MidiLib.csproj">
-      <Project>{83B44F7A-8343-4279-9908-0EA7D8239337}</Project>
+    <ProjectReference Include="..\MidiLib\MidiLib.csproj">
+      <Project>{83b44f7a-8343-4279-9908-0ea7d8239337}</Project>
       <Name>MidiLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Libs\ShapeControl\ShapeControl.csproj">
-      <Project>{77A3E20F-622C-45BD-A9E3-1760AD069026}</Project>
+    <ProjectReference Include="..\ShapeControl\ShapeControl.csproj">
+      <Project>{77a3e20f-622c-45bd-a9e3-1760ad069026}</Project>
       <Name>ShapeControl</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Libs\SpectrumLib\SpectrumLib.csproj">
-      <Project>{CF4E7647-EAF8-44A8-9E1D-52245A05EB2C}</Project>
+    <ProjectReference Include="..\SpectrumLib\SpectrumLib.csproj">
+      <Project>{cf4e7647-eaf8-44a8-9e1d-52245a05eb2c}</Project>
       <Name>SpectrumLib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Music.ico" />
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

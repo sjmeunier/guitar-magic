@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeControl", "ShapeControl.csproj", "{77A3E20F-622C-45BD-A9E3-1760AD069026}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestShapeControl", "TestShapeControl\TestShapeControl.csproj", "{B9648F22-272C-42AA-B5D0-C9078D0A4898}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{77A3E20F-622C-45BD-A9E3-1760AD069026}.Debug.ActiveCfg = Release|.NET
+		{77A3E20F-622C-45BD-A9E3-1760AD069026}.Debug.Build.0 = Release|.NET
+		{77A3E20F-622C-45BD-A9E3-1760AD069026}.Release.ActiveCfg = Release|.NET
+		{77A3E20F-622C-45BD-A9E3-1760AD069026}.Release.Build.0 = Release|.NET
+		{B9648F22-272C-42AA-B5D0-C9078D0A4898}.Debug.ActiveCfg = Release|.NET
+		{B9648F22-272C-42AA-B5D0-C9078D0A4898}.Debug.Build.0 = Release|.NET
+		{B9648F22-272C-42AA-B5D0-C9078D0A4898}.Release.ActiveCfg = Release|.NET
+		{B9648F22-272C-42AA-B5D0-C9078D0A4898}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
